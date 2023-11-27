@@ -37,7 +37,6 @@ namespace LivetApp2.Views
                 _content.PreviewMouseMove += ScrollViewer_PreviewMouseMove;
                 _content.PreviewMouseLeftButtonUp += ScrollViewer_PreviewMouseLeftButtonUp;
 
-                _content.CaptureMouse();
                 _scrollMousePoint = e.GetPosition(_scrollViewer);
                 _vOff = _scrollViewer.VerticalOffset;
                 _hOff = _scrollViewer.HorizontalOffset;
@@ -45,6 +44,8 @@ namespace LivetApp2.Views
                 e.Handled = true;
 
                 Debug.WriteLine($"MouseLeftButtonDown");
+
+                _content.CaptureMouse();
             }
         }
 

@@ -8,6 +8,7 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
+using System.Windows.Interop;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
@@ -85,13 +86,32 @@ namespace LivetApp2.Views
             _horizontalScrollSynchronizer = new DataGridScrollSynchronizer(horizontals, SynchronizeDirection.Horizontal);
 
             _ScrollDragger = new ScrollDragger(body);
+
+            ComponentDispatcher.ThreadIdle += ComponentDispatcher_ThreadIdle;
+        }
+
+        private void ComponentDispatcher_ThreadIdle(object sender, EventArgs e)
+        {
+            if (Keyboard.IsKeyDown(Key.LeftCtrl) == true
+                || Keyboard.IsKeyDown(Key.RightCtrl) == true)
+            {
+                ctrlDisplay.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                ctrlDisplay.Visibility = Visibility.Collapsed;
+            }
         }
 
         private void body_PreviewMouseWheel(object sender, MouseWheelEventArgs e)
         {
-            slider.Value += (e.Delta > 0) ? -0.03 : 0.03;
+            if (Keyboard.IsKeyDown(Key.LeftCtrl) == true
+                || Keyboard.IsKeyDown(Key.RightCtrl) == true)
+            {
+                slider.Value += (e.Delta > 0) ? -0.03 : 0.03;
 
-            e.Handled = true;
+                e.Handled = true;
+            }
         }
 
         #endregion --------------------------------------------------------------------------------------------
