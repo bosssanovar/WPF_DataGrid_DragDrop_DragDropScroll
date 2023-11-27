@@ -26,21 +26,26 @@ namespace LivetApp2.Views
             _scrollViewer = GetScrollViewer(dataGrid);
             _content = dataGrid;
 
-            dataGrid.PreviewMouseLeftButtonDown += ScrollViewer_MouseLeftButtonDown;
-            dataGrid.PreviewMouseMove += ScrollViewer_PreviewMouseMove;
-            dataGrid.PreviewMouseLeftButtonUp += ScrollViewer_PreviewMouseLeftButtonUp;
+            _content.PreviewMouseLeftButtonDown += ScrollViewer_MouseLeftButtonDown;
         }
 
         private void ScrollViewer_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            _content.CaptureMouse();
-            _scrollMousePoint = e.GetPosition(_scrollViewer);
-            _vOff = _scrollViewer.VerticalOffset;
-            _hOff = _scrollViewer.HorizontalOffset;
+            if (Keyboard.IsKeyDown(Key.LeftCtrl) == true
+                || Keyboard.IsKeyDown(Key.RightCtrl) == true)
+            {
+                _content.PreviewMouseMove += ScrollViewer_PreviewMouseMove;
+                _content.PreviewMouseLeftButtonUp += ScrollViewer_PreviewMouseLeftButtonUp;
 
-            e.Handled = true;
+                _content.CaptureMouse();
+                _scrollMousePoint = e.GetPosition(_scrollViewer);
+                _vOff = _scrollViewer.VerticalOffset;
+                _hOff = _scrollViewer.HorizontalOffset;
 
-            Debug.WriteLine($"MouseLeftButtonDown");
+                e.Handled = true;
+
+                Debug.WriteLine($"MouseLeftButtonDown");
+            }
         }
 
         private void ScrollViewer_PreviewMouseMove(object sender, MouseEventArgs e)
@@ -61,6 +66,9 @@ namespace LivetApp2.Views
 
         private void ScrollViewer_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
+            _content.PreviewMouseMove -= ScrollViewer_PreviewMouseMove;
+            _content.PreviewMouseLeftButtonUp -= ScrollViewer_PreviewMouseLeftButtonUp;
+
             _content.ReleaseMouseCapture();
 
             e.Handled = true;
