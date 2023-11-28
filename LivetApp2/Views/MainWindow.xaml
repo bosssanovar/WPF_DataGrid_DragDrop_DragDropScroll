@@ -42,47 +42,6 @@
         <Style TargetType="{x:Type DataGrid}">
             <Setter Property="AlternationCount" Value="2" />
         </Style>
-
-        <Style TargetType="{x:Type DataGridRow}">
-            <Style.Triggers>
-                <Trigger Property="ItemsControl.AlternationIndex" Value="0">
-                    <Setter Property="Background" Value="#aaa"></Setter>
-                </Trigger>
-                <Trigger Property="ItemsControl.AlternationIndex" Value="1">
-                    <Setter Property="Background" Value="#FFF"></Setter>
-                </Trigger>
-            </Style.Triggers>
-        </Style>
-        
-        <Style x:Key="Style1" TargetType="DataGridCell">
-            <Setter Property="Height" Value="20"/>
-            <Setter Property="Width" Value="20"/>
-            <Setter Property="Background" Value="Transparent"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type DataGridCell}">
-                        <Grid Background="{TemplateBinding Background}">
-                            <ContentPresenter VerticalAlignment="Center" />
-                        </Grid>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-
-        <Style x:Key="Style2" TargetType="DataGridCell">
-            <Setter Property="Height" Value="20"/>
-            <Setter Property="Width" Value="20"/>
-            <Setter Property="Background" Value="#8dd0"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type DataGridCell}">
-                        <Grid Background="{TemplateBinding Background}">
-                            <ContentPresenter VerticalAlignment="Center" />
-                        </Grid>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
     </Window.Resources>
 
     <Grid>
@@ -325,207 +284,207 @@
                 />
             </DataGrid.LayoutTransform>
             <DataGrid.Columns>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style2}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}" CellStyle="{StaticResource Style1}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
             </DataGrid.Columns>
         </DataGrid>
 
