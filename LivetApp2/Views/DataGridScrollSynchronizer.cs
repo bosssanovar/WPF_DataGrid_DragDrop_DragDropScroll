@@ -32,10 +32,22 @@ namespace LivetApp2.Views
     public class DataGridScrollSynchronizer
     {
         //! スクロールビューワーリスト
-        private readonly List<ScrollViewer> ScrollViewerList;
+        private readonly List<ScrollViewer> _scrollViewerList;
+
+        private int _index = 0;
+
+        private int NextIndex
+        {
+            get
+            {
+                int ret = _index;
+                _index++;
+                return ret;
+            }
+        }
 
         //! スクロール方向
-        private SynchronizeDirection Direction { get; set; }
+        private SynchronizeDirection _direction { get; set; }
 
         /**
          * @brier コンストラクタ
@@ -43,38 +55,39 @@ namespace LivetApp2.Views
          * @param [in] dataGridList 同期するデータグリッドリスト
          * @param [in] direction 同期するスクロール方向
          */
-        public DataGridScrollSynchronizer(List<ItemsControl> itemsControlList, SynchronizeDirection direction = SynchronizeDirection.Both)
+        public DataGridScrollSynchronizer(SynchronizeDirection direction = SynchronizeDirection.Both)
         {
-            ScrollViewerList = new List<ScrollViewer>();
-
-            // データグリッド数を取得します。
-            int dataGridNum = itemsControlList.Count;
-
-            // 同期するデータグリッド数が1以下の場合、何もしない。
-            if (dataGridNum < 2)
-            {
-                return;
-            }
-
-            // データグリッド数分繰り返します。
-            for (int i = 0; i < dataGridNum; ++i)
-            {
-                // データグリッドのスクロールビューワーを取得します。
-                var dataGrid = itemsControlList[i];
-                var scrollViewer = GetScrollViewer(dataGrid);
-
-                // スクロールビューワーにイベントハンドラを設定します。
-                scrollViewer.ScrollChanged += ScrollChanged;
-
-                // スクロールビューワーを識別するためタグを設定します。
-                scrollViewer.Tag = i;
-
-                // スクロールビューワーリストに保存します。
-                ScrollViewerList.Add(scrollViewer);
-            }
+            _scrollViewerList = new List<ScrollViewer>();
 
             // スクロール方向を保存します。
-            Direction = direction;
+            _direction = direction;
+        }
+
+        public void AddScrollableElement(ItemsControl itemsControl)
+        {
+            // データグリッドのスクロールビューワーを取得します。
+            var scrollViewer = GetScrollViewer(itemsControl);
+
+            // スクロールビューワーにイベントハンドラを設定します。
+            scrollViewer.ScrollChanged += ScrollChanged;
+
+            // スクロールビューワーを識別するためタグを設定します。
+            scrollViewer.Tag = NextIndex;
+
+            // スクロールビューワーリストに保存します。
+            _scrollViewerList.Add(scrollViewer);
+        }
+
+        public void AddScrollableElement(ScrollViewer scrollViewer)
+        {
+            // スクロールビューワーにイベントハンドラを設定します。
+            scrollViewer.ScrollChanged += ScrollChanged;
+
+            // スクロールビューワーを識別するためタグを設定します。
+            scrollViewer.Tag = NextIndex;
+
+            // スクロールビューワーリストに保存します。
+            _scrollViewerList.Add(scrollViewer);
         }
 
         /**
@@ -126,13 +139,13 @@ namespace LivetApp2.Views
             var srcScrollViewer = sender as ScrollViewer;
 
             // 同期するスクロール方向が水平方向の場合
-            if (Direction.HasFlag(SynchronizeDirection.Horizontal))
+            if (_direction.HasFlag(SynchronizeDirection.Horizontal))
             {
                 // スクロールするオフセットを取得します。
                 var offset = srcScrollViewer.HorizontalOffset;
 
                 // スクロールビューワー数分繰り返します。
-                foreach (var dstScrollVierwer in ScrollViewerList)
+                foreach (var dstScrollVierwer in _scrollViewerList)
                 {
                     // スクロールしたスクロールビューワーは無視します。
                     if (dstScrollVierwer.Tag == srcScrollViewer.Tag)
@@ -140,7 +153,7 @@ namespace LivetApp2.Views
                         continue;
                     }
 
-                    if(offset == dstScrollVierwer.HorizontalOffset)
+                    if (offset == dstScrollVierwer.HorizontalOffset)
                     {
                         continue;
                     }
@@ -151,13 +164,13 @@ namespace LivetApp2.Views
             }
 
             // 同期するスクロール方向が垂直方向の場合
-            if (Direction.HasFlag(SynchronizeDirection.Vertical))
+            if (_direction.HasFlag(SynchronizeDirection.Vertical))
             {
                 // スクロールするオフセットを取得します。
                 var offset = srcScrollViewer.VerticalOffset;
 
                 // スクロールビューワー数分繰り返します。
-                foreach (var dstScrollVierwer in ScrollViewerList)
+                foreach (var dstScrollVierwer in _scrollViewerList)
                 {
                     // スクロールしたスクロールビューワーは無視します。
                     if (dstScrollVierwer.Tag == srcScrollViewer.Tag)

@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfApp1;
 
 namespace LivetApp2.Views
 {
@@ -34,6 +35,7 @@ namespace LivetApp2.Views
         private DataGridScrollSynchronizer _verticalScrollSynchronizer;
         private DataGridScrollSynchronizer _horizontalScrollSynchronizer;
         private ScrollDragger _ScrollDragger;
+        private ImagePrinter _printer;
 
         #endregion --------------------------------------------------------------------------------------------
 
@@ -49,6 +51,8 @@ namespace LivetApp2.Views
         public MainWindow()
         {
             InitializeComponent();
+
+            _printer = new ImagePrinter(image);
         }
 
         #endregion --------------------------------------------------------------------------------------------
@@ -71,23 +75,27 @@ namespace LivetApp2.Views
 
         private void Window_ContentRendered(object sender, EventArgs e)
         {
-            var verticals = new List<ItemsControl>();
-            verticals.Add(rowHeader1);
-            verticals.Add(rowHeader2);
-            verticals.Add(rowHeader3);
-            verticals.Add(body);
-            _verticalScrollSynchronizer = new DataGridScrollSynchronizer(verticals, SynchronizeDirection.Vertical);
+            _verticalScrollSynchronizer = new DataGridScrollSynchronizer(SynchronizeDirection.Vertical);
+            _verticalScrollSynchronizer.AddScrollableElement(rowHeader1);
+            _verticalScrollSynchronizer.AddScrollableElement(rowHeader2);
+            _verticalScrollSynchronizer.AddScrollableElement(rowHeader3);
+            _verticalScrollSynchronizer.AddScrollableElement(body);
+            _verticalScrollSynchronizer.AddScrollableElement(dummy);
 
-            var horizontals = new List<ItemsControl>();
-            horizontals.Add(columnHeader1);
-            horizontals.Add(columnHeader2);
-            horizontals.Add(columnHeader3);
-            horizontals.Add(body);
-            _horizontalScrollSynchronizer = new DataGridScrollSynchronizer(horizontals, SynchronizeDirection.Horizontal);
+            _horizontalScrollSynchronizer = new DataGridScrollSynchronizer(SynchronizeDirection.Horizontal);
+            _horizontalScrollSynchronizer.AddScrollableElement(columnHeader1);
+            _horizontalScrollSynchronizer.AddScrollableElement(columnHeader2);
+            _horizontalScrollSynchronizer.AddScrollableElement(columnHeader3);
+            _horizontalScrollSynchronizer.AddScrollableElement(body);
+            _horizontalScrollSynchronizer.AddScrollableElement(dummy);
 
             _ScrollDragger = new ScrollDragger(body);
 
+            PrintDummy();
+
             ComponentDispatcher.ThreadIdle += ComponentDispatcher_ThreadIdle;
+
+            slider.ValueChanged += slider_ValueChanged;
         }
 
         private void ComponentDispatcher_ThreadIdle(object sender, EventArgs e)
@@ -121,5 +129,63 @@ namespace LivetApp2.Views
         #endregion --------------------------------------------------------------------------------------------
 
         #endregion --------------------------------------------------------------------------------------------
+
+        private void slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            if(e.NewValue >= 1)
+            {
+                ChangeToEditable();
+            }
+            else
+            {
+                ChangeToPreview();
+            }
+        }
+
+        private void ChangeToEditable()
+        {
+            body.Visibility = Visibility.Visible;
+            dummy.Visibility = Visibility.Collapsed;
+        }
+
+        private void ChangeToPreview()
+        {
+            body.Visibility = Visibility.Collapsed;
+            dummy.Visibility = Visibility.Visible;
+        }
+
+        private void PrintDummy()
+        {
+
+            bool[,] sampleValues = new bool[640, 640];
+
+            // 対角線
+            for (int i = 0; i < 640; i++)
+            {
+                sampleValues[i, i] = true;
+            }
+
+            // 一部ブロック
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    sampleValues[i, j] = true;
+                }
+            }
+
+            // 一部ブロック
+            for (int i = 0; i < 100; i++)
+            {
+                for (int j = 0; j < 100; j++)
+                {
+                    sampleValues[200 + i, j] = true;
+                    sampleValues[i, 300 + j] = true;
+                    sampleValues[400 + i, 400 + j] = true;
+                }
+            }
+
+            _printer.Print(sampleValues);
+        }
     }
 }

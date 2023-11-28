@@ -284,211 +284,667 @@
                 />
             </DataGrid.LayoutTransform>
             <DataGrid.Columns>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
-                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn/>
             </DataGrid.Columns>
         </DataGrid>
 
+        <ScrollViewer x:Name="dummy" Grid.Column="3" Grid.ColumnSpan="2" Grid.Row="3" Grid.RowSpan="2" Visibility="Hidden"
+                      HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible" IsDeferredScrollingEnabled="True">
+            <Image x:Name="image" HorizontalAlignment="Center" VerticalAlignment="Center"
+                   Width="12800" Height="12800">
+                <Image.LayoutTransform>
+                    <ScaleTransform
+                    CenterX="0" CenterY="0"
+                    ScaleX="{Binding ElementName=slider,Path=Value}"
+                    ScaleY="{Binding ElementName=slider,Path=Value}"
+                />
+                </Image.LayoutTransform>
+            </Image>
+        </ScrollViewer>
+
         <Slider x:Name="slider" Grid.Row="5" Grid.ColumnSpan="5"
-                Minimum="0.5" Maximum="1.5" Value="1" IsDirectionReversed="True"/>
+                Minimum="0.1" Maximum="1.5" Value="1" IsDirectionReversed="True"/>
     </Grid>
 </Window>
