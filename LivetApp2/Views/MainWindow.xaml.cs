@@ -34,7 +34,8 @@ namespace LivetApp2.Views
 
         private DataGridScrollSynchronizer _verticalScrollSynchronizer;
         private DataGridScrollSynchronizer _horizontalScrollSynchronizer;
-        private ScrollDragger _ScrollDragger;
+        private ScrollDragger _bodyGridScrollDragger;
+        private ScrollDragger _dummyScrollDragger;
         private ImagePrinter _printer;
 
         #endregion --------------------------------------------------------------------------------------------
@@ -89,7 +90,8 @@ namespace LivetApp2.Views
             _horizontalScrollSynchronizer.AddScrollableElement(body);
             _horizontalScrollSynchronizer.AddScrollableElement(dummy);
 
-            _ScrollDragger = new ScrollDragger(body);
+            _bodyGridScrollDragger = new ScrollDragger(body);
+            _dummyScrollDragger = new ScrollDragger(dummy);
 
             PrintDummy();
 

@@ -15,7 +15,7 @@ namespace LivetApp2.Views
     public class ScrollDragger
     {
         private readonly ScrollViewer _scrollViewer;
-        private readonly DataGrid _content;
+        private readonly UIElement _content;
         private Point _scrollMousePoint;
 
         private double _vOff = 1;
@@ -25,6 +25,14 @@ namespace LivetApp2.Views
         {
             _scrollViewer = GetScrollViewer(dataGrid);
             _content = dataGrid;
+
+            _content.PreviewMouseLeftButtonDown += ScrollViewer_MouseLeftButtonDown;
+        }
+
+        public ScrollDragger(ScrollViewer scrollViewer)
+        {
+            _scrollViewer = scrollViewer;
+            _content = scrollViewer;
 
             _content.PreviewMouseLeftButtonDown += ScrollViewer_MouseLeftButtonDown;
         }
