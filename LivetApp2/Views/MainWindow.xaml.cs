@@ -113,8 +113,18 @@ namespace LivetApp2.Views
 
         private void body_PreviewMouseWheel(object sender, MouseWheelEventArgs e)
         {
+            MoveSlider(e);
+        }
+
+        private void dummy_PreviewMouseWheel(object sender, MouseWheelEventArgs e)
+        {
+            MoveSlider(e);
+        }
+
+        private void MoveSlider(MouseWheelEventArgs e)
+        {
             if (Keyboard.IsKeyDown(Key.LeftCtrl) == true
-                || Keyboard.IsKeyDown(Key.RightCtrl) == true)
+                            || Keyboard.IsKeyDown(Key.RightCtrl) == true)
             {
                 slider.Value += (e.Delta > 0) ? -0.03 : 0.03;
 
