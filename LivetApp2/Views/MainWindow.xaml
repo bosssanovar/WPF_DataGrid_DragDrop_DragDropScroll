@@ -275,7 +275,7 @@
                   VirtualizingPanel.IsContainerVirtualizable="True" CanUserAddRows="False" CanUserDeleteRows="False"
                   AutoGenerateColumns="False" HeadersVisibility="None" ScrollViewer.IsDeferredScrollingEnabled="True"
                   EnableColumnVirtualization="True" EnableRowVirtualization="True" SelectionUnit="Cell" SelectionMode="Extended"
-                  PreviewMouseWheel="body_PreviewMouseWheel">
+                  PreviewMouseWheel="body_PreviewMouseWheel" v:VisibilityAnimation.AnimationType="Fade">
             <DataGrid.LayoutTransform>
                 <ScaleTransform
                     CenterX="0" CenterY="0"
@@ -931,8 +931,8 @@
         </DataGrid>
 
         <ScrollViewer x:Name="dummy" Grid.Column="3" Grid.ColumnSpan="2" Grid.Row="3" Grid.RowSpan="2" Visibility="Hidden"
-                      HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible" IsDeferredScrollingEnabled="True" PreviewMouseWheel="dummy_PreviewMouseWheel"
-                      >
+                      HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible" IsDeferredScrollingEnabled="True"
+                      PreviewMouseWheel="dummy_PreviewMouseWheel" v:VisibilityAnimation.AnimationType="Fade">
             <Image x:Name="image" HorizontalAlignment="Center" VerticalAlignment="Center"
                    Width="12800" Height="12800">
                 <Image.LayoutTransform>
