@@ -61,7 +61,7 @@ namespace LivetApp2.Views
         {
             if (_content.IsMouseCaptured)
             {
-                var newVerticalOffset = _vOff + (_scrollMousePoint.Y - e.GetPosition(_scrollViewer).Y) / 20.0;
+                var newVerticalOffset = _vOff + (_scrollMousePoint.Y - e.GetPosition(_scrollViewer).Y);
                 _scrollViewer.ScrollToVerticalOffset(newVerticalOffset);
 
                 var newHorizontalOffset = _hOff + (_scrollMousePoint.X - e.GetPosition(_scrollViewer).X);

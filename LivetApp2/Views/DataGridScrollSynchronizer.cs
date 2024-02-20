@@ -193,11 +193,11 @@ namespace LivetApp2.Views
         {
             if (!src.CanContentScroll && dst.CanContentScroll)
             {
-                return offset / 20.0;
+                return offset;
             }
             else if (src.CanContentScroll && !dst.CanContentScroll)
             {
-                return offset * 20.0;
+                return offset;
             }
             else
             {

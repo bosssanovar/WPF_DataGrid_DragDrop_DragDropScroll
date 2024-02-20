@@ -92,7 +92,7 @@
                 <ControlTemplate>
                     <ScrollViewer Padding="{TemplateBinding Control.Padding}" Focusable="False"
                                 VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden"
-                                  VirtualizingPanel.ScrollUnit="Item" VirtualizingPanel.IsVirtualizing="True"
+                                  VirtualizingPanel.ScrollUnit="Pixel" VirtualizingPanel.IsVirtualizing="True"
                                   VirtualizingPanel.VirtualizationMode="Recycling" CanContentScroll="False">
                         <ItemsPresenter SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
                     </ScrollViewer>
@@ -126,7 +126,7 @@
                 <ControlTemplate>
                     <ScrollViewer Padding="{TemplateBinding Control.Padding}" Focusable="False"
                                 VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden"
-                                  VirtualizingPanel.ScrollUnit="Item" VirtualizingPanel.IsVirtualizing="True"
+                                  VirtualizingPanel.ScrollUnit="Pixel" VirtualizingPanel.IsVirtualizing="True"
                                   VirtualizingPanel.VirtualizationMode="Recycling" CanContentScroll="False">
                         <ItemsPresenter SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
                     </ScrollViewer>
@@ -160,7 +160,7 @@
                 <ControlTemplate>
                     <ScrollViewer Padding="{TemplateBinding Control.Padding}" Focusable="False"
                                 VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden"
-                                  VirtualizingPanel.ScrollUnit="Item" VirtualizingPanel.IsVirtualizing="True"
+                                  VirtualizingPanel.ScrollUnit="Pixel" VirtualizingPanel.IsVirtualizing="True"
                                   VirtualizingPanel.VirtualizationMode="Recycling" CanContentScroll="False">
                         <ItemsPresenter SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
                     </ScrollViewer>
@@ -194,7 +194,7 @@
                 <ControlTemplate>
                     <ScrollViewer Padding="{TemplateBinding Control.Padding}" Focusable="False"
                                 VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden"
-                                  VirtualizingPanel.ScrollUnit="Item" VirtualizingPanel.IsVirtualizing="True"
+                                  VirtualizingPanel.ScrollUnit="Pixel" VirtualizingPanel.IsVirtualizing="True"
                                   VirtualizingPanel.VirtualizationMode="Recycling">
                         <ItemsPresenter SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
                     </ScrollViewer>
@@ -228,7 +228,7 @@
                 <ControlTemplate>
                     <ScrollViewer Padding="{TemplateBinding Control.Padding}" Focusable="False"
                                 VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden"
-                                  VirtualizingPanel.ScrollUnit="Item" VirtualizingPanel.IsVirtualizing="True"
+                                  VirtualizingPanel.ScrollUnit="Pixel" VirtualizingPanel.IsVirtualizing="True"
                                   VirtualizingPanel.VirtualizationMode="Recycling">
                         <ItemsPresenter SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
                     </ScrollViewer>
@@ -262,7 +262,7 @@
                 <ControlTemplate>
                     <ScrollViewer Padding="{TemplateBinding Control.Padding}" Focusable="False"
                                     VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden"
-                                  VirtualizingPanel.ScrollUnit="Item" VirtualizingPanel.IsVirtualizing="True"
+                                  VirtualizingPanel.ScrollUnit="Pixel" VirtualizingPanel.IsVirtualizing="True"
                                   VirtualizingPanel.VirtualizationMode="Recycling">
                         <ItemsPresenter SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
                     </ScrollViewer>
@@ -275,7 +275,8 @@
                   VirtualizingPanel.IsContainerVirtualizable="True" CanUserAddRows="False" CanUserDeleteRows="False"
                   AutoGenerateColumns="False" HeadersVisibility="None" ScrollViewer.IsDeferredScrollingEnabled="True"
                   EnableColumnVirtualization="True" EnableRowVirtualization="True" SelectionUnit="Cell" SelectionMode="Extended"
-                  PreviewMouseWheel="body_PreviewMouseWheel" v:VisibilityAnimation.AnimationType="Fade">
+                  PreviewMouseWheel="body_PreviewMouseWheel" v:VisibilityAnimation.AnimationType="Fade"
+                  VirtualizingPanel.ScrollUnit="Pixel">
             <DataGrid.LayoutTransform>
                 <ScaleTransform
                     CenterX="0" CenterY="0"
